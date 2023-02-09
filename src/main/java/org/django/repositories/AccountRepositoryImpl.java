@@ -23,7 +23,7 @@ public class AccountRepositoryImpl implements AccountRepository {
     private static  AccountRepositoryImpl accountRepository;
 
     private AccountRepositoryImpl(){}
-    public static AccountRepositoryImpl getInstance(){
+    public  static AccountRepositoryImpl getInstance(){
 
         if (accountRepository == null){
             System.out.println("Singleton instantiation");
@@ -51,7 +51,7 @@ public class AccountRepositoryImpl implements AccountRepository {
     private Map<Long, BankAccount> bankAccountMap = new HashMap<>();
     private long accountsCount=0;
     @Override
-    public BankAccount save(BankAccount bankAccount) {
+    public  BankAccount save(BankAccount bankAccount) {
         Long accountId=++accountsCount;
         bankAccount.setId(accountId);
         bankAccountMap.put(accountId,bankAccount);

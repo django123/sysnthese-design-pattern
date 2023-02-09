@@ -1,6 +1,6 @@
 package org.django.models;
 
-public class BankAccount {
+public class BankAccount implements Cloneable{
 
     private Long id;
     private double balance;
@@ -72,6 +72,16 @@ public class BankAccount {
 
     public static AccountBuilder builder(){
         return new AccountBuilder();
+    }
+
+    @Override
+    public BankAccount clone() {
+        try {
+            BankAccount clone = (BankAccount) super.clone();
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 
     public static  class AccountBuilder {

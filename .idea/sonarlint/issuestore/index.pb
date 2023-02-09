@@ -9,7 +9,14 @@ l
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 b
 2src/main/java/org/django/utils/JsonSerializer.java,d/8/d8a2c18355481d99513768e911d69e5313d53119
-`
-0src/main/java/org/django/models/BankAccount.java,8/0/8044172fb9586b3a7b4c9496dcedd6221ea7125f
 a
 1src/main/java/org/django/models/BankDirector.java,4/c/4c0d3123d9c49d68b9436aa597831e11473b4ad1
+[
++src/main/java/org/django/models/Person.java,f/3/f3836e0362f3a3797b6fe4a033a08d0046d23b20
+\
+,src/main/java/org/django/models/Student.java,1/4/14dccae14ffe2cf8b417f331a2b701ee2caed656
+c
+3src/main/java/org/django/models/PersonDirector.java,7/8/7825f999253e1b54e271273c16053d36809a680d
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
